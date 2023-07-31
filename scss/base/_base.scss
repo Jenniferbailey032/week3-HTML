@@ -16,18 +16,8 @@ body{
     }
 }
 
-#main-content-left{
-    .social-icons{
-        li{
-            // love // hate
-            a:link, a:visited{
-                color: var(--black);
-                text-decoration: none;
-            }
 
-            a:hover, a:active{
-                color: var(--green);
-            }
-        }
-    }
+#main-content-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
 }

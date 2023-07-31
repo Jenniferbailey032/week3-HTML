@@ -8,7 +8,7 @@ html {
 
 /* ---------------- Media Queries ---------------- */
 /* =============
-    Variables
+  Variables
 ============= */
 :root {
   --black: #000000;
@@ -353,17 +353,35 @@ body {
   grid-area: content;
 }
 
-#main-content-left .social-icons li a:link, #main-content-left .social-icons li a:visited {
-  color: var(--black);
-  text-decoration: none;
-}
-#main-content-left .social-icons li a:hover, #main-content-left .social-icons li a:active {
-  color: var(--green);
+#main-content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+  grid-template-columns: 40% 60%;
 }
 
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
 /* =============
     Buttons
 ============= */
@@ -415,6 +433,10 @@ nav {
 /* =============
     Header
 ============= */
+header {
+  padding: 48px 0;
+}
+
 /* =============
     Footer
 ============= */
@@ -425,19 +447,40 @@ footer {
 /* =============
     Index
 ============= */
-.my_work {
+#my_work {
   background-color: var(--grey);
+  padding: 0 16px;
+}
+#my_work h1 {
+  padding-bottom: 24px;
+}
+#my_work h2 {
+  padding: 24px;
+}
+#my_work p {
+  padding: 16px;
 }
 
-.education {
-  background-color: var(--grey);
+#education {
+  background-color: var(--tan);
+  padding: 0 16px;
+}
+#education h1 {
+  padding-bottom: 16px;
+}
+#education h2 {
+  padding: 8px;
+}
+#education p {
+  padding: 8px;
 }
 
-#index-left a:link, #index-left a:visited {
+a:link, a:visited {
   color: var(--green);
   text-decoration: none;
 }
-#index-left a:hover, #index-left a:active {
+
+a:hover, a:active {
   color: var(--brown);
 }
 

@@ -1,16 +1,38 @@
 /* =============
     Index
 ============= */
-
-.my_work{
+#my_work{
     background-color: var(--grey);
+    padding: 0 16px;
+        
+    h1{
+      padding-bottom: 24px;
+      }
+   h2{
+      padding: 24px;
+      }
+   p{
+      padding: 16px;
+      }
+  }
+
+#education{
+    background-color: var(--tan);
+    padding: 0 16px;
+        
+    h1{
+      padding-bottom: 16px;
+      }
+   h2{
+      padding: 8px;
+      }
+   p{
+      padding: 8px;
+      }
+
 }
 
-.education{
-    background-color: var(--grey);
-}
 
-#index-left{
 
     // love // hate
     a:link, a:visited{
@@ -21,4 +43,3 @@
     a:hover, a:active{
         color: var(--brown);
     }
-}

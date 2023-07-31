@@ -12,12 +12,11 @@ html {
 ============= */
 :root {
   --black: #000000;
-  --white: #ffffff;
-  --green: #74ccd1;
-  --darkGreen: #2B797C;
-  --gray: #f0f0f0;
-  --lightGray: #fafafa;
-  --charcoal: #404040;
+  --green: #CDD5C6;
+  --white: #FBF2ED;
+  --grey: #B7BCBF;
+  --brown: #E8D4C6;
+  --tan: #FFE2C3;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -337,7 +336,7 @@ template {
     Base
 ============= */
 body {
-  background-color: var(--gray);
+  background-color: var(--tan);
 }
 
 .content-grid {
@@ -350,7 +349,7 @@ body {
 .content-grid .content-grid-item {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  background-color: var(--white);
+  background-color: var(--tan);
   grid-area: content;
 }
 
@@ -392,7 +391,7 @@ textarea {
     Navigation
 ============= */
 .darkGreenLink:link, .darkGreenLink:visited {
-  color: var(--darkGreen);
+  color: var(--green);
   text-decoration: none;
 }
 

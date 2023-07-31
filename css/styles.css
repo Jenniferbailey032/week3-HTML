@@ -448,7 +448,8 @@ footer {
     Index
 ============= */
 #my_work {
-  background-color: var(--grey);
+  background-color: var(--white);
+  opacity: 0.5;
   padding: 0 16px;
 }
 #my_work h1 {
@@ -462,8 +463,8 @@ footer {
 }
 
 #education {
-  background-color: var(--tan);
   padding: 0 16px;
+  padding-bottom: 16px;
 }
 #education h1 {
   padding-bottom: 16px;
@@ -472,7 +473,7 @@ footer {
   padding: 8px;
 }
 #education p {
-  padding: 8px;
+  padding: 16px;
 }
 
 a:link, a:visited {
@@ -496,6 +497,9 @@ a:hover, a:active {
   color: var(--white);
 }
 
-#research-left img {
-  width: 100%;
+ul {
+  padding: 16px;
+}
+ul li {
+  list-style-type: disc;
 }

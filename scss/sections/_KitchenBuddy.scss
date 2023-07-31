@@ -1,6 +1,16 @@
 /* =============
-    Research
+    KitchenBuddy
 ============= */
+
+    // love // hate
+    a:link, a:visited{
+        color: var(--brown);
+        text-decoration: none;
+    }
+
+    a:hover, a:active{
+        color: var(--white);
+    }
 
 #research-left{
 

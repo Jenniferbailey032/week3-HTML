@@ -2,17 +2,23 @@
     Navigation
 ============= */
 
-// dark green / light green link
+// green / grey link
  // love // hate
- .darkGreenLink:link, .darkGreenLink:visited{
-    color: var(--green);
-    text-decoration: none;
-}
-.darkGreenLink:hover, .darkGreenLink:active{
-    color: var(--green);
-}
+ .GreenLink:link, .GreenLink:visited{
+        color: var(--green);
+        text-decoration: none;
+    }
+.GreenLink:hover, .GreenLink:active{
+        color: var(--brown);
+    }
 
-
+ .GreyLink:link, .GreyLink:visited{
+        color: var(--grey);
+        text-decoration: none;
+    }
+.GreyLink:hover, .GreenLink:active{
+        color: var(--white);
+    }
 
 nav{
     background-color: var(--green);

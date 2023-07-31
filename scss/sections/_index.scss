@@ -2,15 +2,23 @@
     Index
 ============= */
 
+.my_work{
+    background-color: var(--grey);
+}
+
+.education{
+    background-color: var(--grey);
+}
+
 #index-left{
 
     // love // hate
     a:link, a:visited{
-        color: var(--darkGreen);
+        color: var(--green);
         text-decoration: none;
     }
 
     a:hover, a:active{
-        color: var(--green);
+        color: var(--brown);
     }
 }

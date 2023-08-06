@@ -340,10 +340,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-image {
-  width: 100px;
-}
-
 /* =============
     Typography
 ============= */
@@ -440,6 +436,21 @@ a.nav .GreyLink:hover, a.nav .GreenLink:active {
 header {
   padding: 48px 0;
   text-align: center;
+  margin: 16px;
+  padding: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
+  grid-template-area: "logo burger" "nav nav";
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+          box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+  top: 0;
+  left: 0;
 }
 header a:link, header a:visited {
   color: var(--green);
@@ -461,21 +472,6 @@ p {
   letter-spacing: 0.0625rem;
 }
 
-a.nav,
-a.nav:visited {
-  color: var(--white);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  text-decoration: none;
-  font-size: 2.25rem;
-  letter-spacing: rem-cal(10);
-}
-
-a.nav:hover,
-a.nav:active {
-  color: var(--brown);
-}
-
 /* =============
     Footer
 ============= */
@@ -487,13 +483,33 @@ footer {
     Index
 ============= */
 .box1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px;
+  grid-template-columns: 300px 300px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
   border: 5px solid var(--brown);
   margin: 16px;
+}
+@media (min-width: 1024px) {
+  .box1 .quote {
+    display: block;
+    background-color: var(--green);
+  }
+}
+
+.image-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
 }
 
 .box2 {
@@ -540,21 +556,6 @@ footer {
   padding: 50px;
   content: 50px;
   margin: 20px;
-}
-
-.image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50px;
 }
 
 h2 {

@@ -2,11 +2,39 @@
     Index
 ============= */
 .box1{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    // grid-template-areas: "16px content 16px";
     align-items: center;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     border: 5px solid var(--brown);
     margin:16px;
+
+    @include lg{
+        .quote{
+            display: block;
+            background-color: var(--green);
+        }
+    }
+
+}
+
+
+
+.image-container{
+    // display: flex;
+    // justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    border-radius: 50px;
+    // margin: 80px;
+    // margin-left: 80px;
+    // margin-right: 1px;
+    padding: 20px;
+
+    
 
 }
 
@@ -64,15 +92,7 @@
 
 }
 
-.image-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height:auto;
-    border-radius: 50px;
 
-}
 
 h2{
     text-align: left;

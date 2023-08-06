@@ -461,6 +461,21 @@ p {
   letter-spacing: 0.0625rem;
 }
 
+a.nav,
+a.nav:visited {
+  color: var(--white);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  font-size: 2.25rem;
+  letter-spacing: rem-cal(10);
+}
+
+a.nav:hover,
+a.nav:active {
+  color: var(--brown);
+}
+
 /* =============
     Footer
 ============= */

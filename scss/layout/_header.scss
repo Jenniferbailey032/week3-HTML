@@ -29,3 +29,18 @@ p{
     padding-bottom: 16px;
     letter-spacing: rem-calc(1);
 }
+
+a.nav,
+a.nav:visited{
+        color: var(--white);
+        transition: .25s;
+        text-decoration: none;
+        font-size: rem-calc(36);
+        letter-spacing: rem-cal(10);
+        
+    }
+    
+    a.nav:hover,
+    a.nav:active {
+        color: var(--brown);
+    }

@@ -418,6 +418,22 @@ nav {
   background-color: var(--green);
 }
 
+a.nav .GreyLink:link, a.nav .GreyLink:visited {
+  color: var(--grey);
+  text-decoration: none;
+}
+a.nav .GreyLink:hover, a.nav .GreenLink:active {
+  color: var(--white);
+}
+
+#education_a .GreyLink:link, #education_a .GreyLink:visited {
+  color: var(--grey);
+  text-decoration: none;
+}
+#education_a .GreyLink:hover, #education_a .GreenLink:active {
+  color: var(--white);
+}
+
 /* =============
     Header
 ============= */

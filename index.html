@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/7ab68a398d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Raleway:ital@0;1&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/styles.css">
     <title> Jennifer's UX Portfolio</title>
 </head>
@@ -14,79 +20,100 @@
     <main class="content-grid">
         <div class="content-grid-item">
             <header>
-                <a href="index.html" class="GreenLink"><h1>Jennifer's UX Portfolio</h1></a>
+                <a href="index.html" class="GreenLink"><h1 id="title">Jennifer's UX Portfolio</h1></a>
                 <p>Creatively Designing Solutions</p>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About ME</li>
-                        <li>Education</li>
-                        <li>My Work</li>
-                        <li>Contact me</li>
-                    </ul>
-                </nav>
+
+                <section id="nav-container">
+                    <section id="nav-copntainer">
+                        <section id="burger-container">
+                            <button id="burger-btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </button> 
+                    </section>
+                    <nav id="main-menu">
+                        <ul>
+                            <li>Home</li>
+                            <li>About ME</li>
+                            <a href="#education_a">Education</a> 
+                            <li>My Work</li>
+                            <li>Contact me</li>
+                        </ul>
+                    </nav>
+                </section>
+                
+
             </header>
+
+            
+
         
-
-            <div id="main-content-grid">
-                <section>
-                    <h1>ABOUT ME</h1>
-                    <img src="img/Jenny_Pic.jpg" alt="Meet Jenny">
-                </section>
-                <section id="index-right">
-                    <p>I have worked in Marketing for the past five years where I had the ability to work creatively and apply design thinking to achieve positive solutions. I enjoy working in a creative environment and look forward to a career in User Experience.</p>
-                </section>
-
+            <div class="box1">
+                
+                        <section>
+                            <h2>ABOUT ME</h2>
+                    <div class="image-container">
+                            <img src="img/Jenny_Pic.jpg" alt="Meet Jenny">
+                    </div>
+                    <div class="about_me"></div>
+                            <p>I have worked in Marketing for the past five years where I had the ability to work creatively and apply design thinking to achieve positive solutions. I enjoy working in a creative environment and look forward to a career in User Experience.</p>
+                        </section>
+                </div>
             </div>
 
 
-
-            <div id="education">
-                <section>
-                    <h1>Education</h1>
-                    <h2>Virginia Tech</h2>
-                        <ul>
-                            <li>
-                                2013-2017 - Double majored in Human Development and Psychology and minored in Leadership and Sustainable Social Change 
-                            </li>
-                        </ul>
-                    <h2>General Assembly</h2>
-                        <ul>
-                            <li>
-                                2020 - obtained a certificate in User Experience and Design  
-                            </li>
-                        </ul>
-                    <h2>Cornell Online Univeristy</h2>
-                        <ul>
-                            <li>
-                                2020 - obtained a certificate in Web Design and Development 
-                            </li>
-                        </ul>
-                    <h2>Drexel Online University </h2>
-                        <ul>
-                            <li>
-                                2022- Present - Receiving a master’s in human computer Interaction and User Experience  
-                            </li>
-                        </ul>
-                </section>
-            </div>
+                <div class="box2">
+                    <div class="education">
+                        <section>
+                            <h2 id="education_a">Education</h2>
+                            <h2>Virginia Tech</h2>
+                                <ul>
+                                    <li>
+                                        2013-2017 - Double majored in Human Development and Psychology and minored in Leadership and Sustainable Social Change 
+                                    </li>
+                                </ul>
+                            <h2>General Assembly</h2>
+                                <ul>
+                                    <li>
+                                        2020 - obtained a certificate in User Experience and Design  
+                                    </li>
+                                </ul>
+                            <h2>Cornell Online Univeristy</h2>
+                                <ul>
+                                    <li>
+                                        2020 - obtained a certificate in Web Design and Development 
+                                    </li>
+                                </ul>
+                            <h2>Drexel Online University </h2>
+                                <ul>
+                                    <li>
+                                        2022- Present - Receiving a master’s in human computer Interaction and User Experience  
+                                    </li>
+                                </ul>
+                        </section>
+                    </div>
+                </div>
   
-        <div id="my_work">
-            <section >
-                <h1>My Work</h1>
-                <a href="KitchenBuddy.html" class= "GreenLink"><h2>KitchenBuddy</h2></a> 
-                <a href="StyleSync.html" class= "GreenLink"><h2>Style Sync</h2></a>
-                <a href="QuickDine.html" class= "GreenLink"><h2>Quick Dine</h2></a>
-                <a href="PokeWorld.html" class= "GreenLink"><h2>PokeWorld</h2></a>
-            </section>
-        </div>
-
+            <div class="box3">
+                <section >
+                    <h2>My Work</h2>
+                    <div><a href="KitchenBuddy.html" class="GreyLink"><h2>KitchenBuddy</h2></a></div> 
+                    <div><a href="StyleSync.html" class="GreyLink"><h2>Style Sync</h2></a></div>
+                    <div><a href="QuickDine.html" class="GreyLink"><h2>Quick Dine</h2></a></div>
+                    <div><a href="PokeWorld.html" class="GreyLink"><h2>PokeWorld</h2></a></div>
+                </section>
+            </div>
+       
 
 
             <footer>
-                <section>
-                    <h1>Contact Me</h1>
+                <div class="box4">
+                    <section>
+                        <h2>Contact Me</h2>
+                    </section>
+                </div>
             </footer>
+                
+
         </div>
     </main>
 

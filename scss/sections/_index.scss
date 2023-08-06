@@ -1,13 +1,96 @@
 /* =============
     Index
 ============= */
+.box1{
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    border: 5px solid var(--brown);
+    margin:16px;
+
+}
+
+.box2{
+    padding: 50px;
+    border: 5px solid var(--brown);
+    margin:16px;
+
+}
+
+.box3{
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+    border: 5px solid var(--brown);
+    margin:16px;
+    display: grid;
+    grid-template-rows: 4, 500px;
+    // grid-template-areas: 
+    // "."
+    // "."
+    // "."
+    // ".";
+    grid-gap:20px;
+     
+}
+
+.GreyLink{
+    padding:20px;
+    margin: 20px;
+    text-align: center;
+    align-self: center;
+    background-color: var(--brown);
+    border: 3px solid var(--tan);
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 4fr, 500px;
+    grid-gap: 8px;
+    // grid-template-areas: 
+    // "."
+    // "."
+    // "."
+    // ".";
+    // grid-gap: 8px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    
+}
+
+
+.box4{
+    background-color: var(--green);
+    padding: 50px;
+    content: 50px;
+    margin:20px;
+
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height:auto;
+    border-radius: 50px;
+
+}
+
+h2{
+    text-align: left;
+    padding: 16px;
+}
+
 #my_work{
     background-color: var(--white);
-    opacity: .5;
+    border: 15px solid var(--brown);
     padding: 0 16px;
         
     h1{
       padding-bottom: 24px;
+      font-family: 'Raleway', sans-serif;
+      font-size: rem-calc(24);
+      font-weight: 300;
+      letter-spacing: rem-calc(2);
+      text-align: center;
       }
    h2{
       padding: 24px;
@@ -15,7 +98,11 @@
    p{
       padding: 16px;
       }
-  }
+  
+  
+  
+    }
+
 
 #education{
     padding: 0 16px;

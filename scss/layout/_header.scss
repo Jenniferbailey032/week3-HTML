@@ -3,4 +3,29 @@
 ============= */
 header{
     padding: 48px 0;
+    text-align: center;
+
+
+    a:link, a:visited{
+        color: var(--green);
+        transition: .25s;
+        text-decoration: none;
+        font-size: rem-calc(36);
+        letter-spacing: rem-cal(10);
+        
+    }
+    
+    a:hover, a:active{
+        color: var(--brown);
+
+    }
+
+    
+}
+p{
+    font: rem-calc(14);
+    font-style: italic;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    letter-spacing: rem-calc(1);
 }

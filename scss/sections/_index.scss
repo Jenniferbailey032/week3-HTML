@@ -2,25 +2,28 @@
     Index
 ============= */
 .box1{
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-areas:
-    "img quote";
+    // display: grid;
+    // grid-template-columns: 300px 300px;
+    // grid-template-areas:
+    // "img quote";
     align-items: center;
     text-align: center;
     padding: 20px;
     border: 5px solid var(--brown);
     margin:16px;
-    margin-top: 450px;
+    margin-top: 550px;
 
 
 
     @include lg{
         .quote{
-            display: block;
+            display: grid;
+            grid-template-rows: 100px 20px;
+            align-items: center;
+            text-align: center;
             background-color: var(--green);
             padding: 40px;
-            border-radius: 30px;
+            border-radius: 100px;
             grid-area: quote;
         }
     }

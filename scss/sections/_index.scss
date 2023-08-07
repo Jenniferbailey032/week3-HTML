@@ -4,17 +4,24 @@
 .box1{
     display: grid;
     grid-template-columns: 300px 300px;
-    // grid-template-areas: "16px content 16px";
+    grid-template-areas:
+    "img quote";
     align-items: center;
     text-align: center;
     padding: 20px;
     border: 5px solid var(--brown);
     margin:16px;
+    margin-top: 450px;
+
+
 
     @include lg{
         .quote{
             display: block;
             background-color: var(--green);
+            padding: 40px;
+            border-radius: 30px;
+            grid-area: quote;
         }
     }
 
@@ -85,7 +92,8 @@
 
 
 .box4{
-    background-color: var(--green);
+    display: block;
+    background-color: var(--grey);
     padding: 50px;
     content: 50px;
     margin:20px;
@@ -144,10 +152,10 @@ h2{
 
     // love // hate
     a:link, a:visited{
-        color: var(--green);
+        color: black;
         text-decoration: none;
     }
 
     a:hover, a:active{
-        color: var(--brown);
+        color: black;
     }

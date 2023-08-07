@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Raleway:ital@0;1&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title> Jennifer's UX Portfolio</title>
 </head>
@@ -20,27 +20,31 @@
     <main class="content-grid">
         <div class="content-grid-item">
             <header>
+            <div class="title_nav">
+            <div class="header">
                 <a href="index.html" class="GreenLink"><h1 id="title">Jennifer's UX Portfolio</h1></a>
                 <p>Creatively Designing Solutions</p>
-
-                <section id="nav-container">
-                    <section id="nav-copntainer">
+                <section class="logo">
+                    <a href="logo"><img src="img/logo.png" alt="logo"></a>
+                </section>
+            </div>
+                <section class="nav-container">
                         <section id="burger-container">
                             <button id="burger-btn">
                                 <i class="fa-solid fa-bars"></i>
                             </button> 
-                    </section>
+                        </section>
                     <nav id="main-menu">
                         <ul>
-                            <li>Home</li>
-                            <li>About ME</li>
-                            <a href="#education_a" class="nav">Education</a> 
-                            <li>My Work</li>
-                            <li>Contact me</li>
+                            <!-- <li><a href="index.html">Home</a></li> -->
+                            <li><a href="index.html">About ME</a></li>
+                            <!-- <li><a href="#education_a">Education</a></li> -->
+                            <li><a href="#mywork">My Work</a></li>
+                            <li><a href="#myworka">Contact me</a></li>
                         </ul>
                     </nav>
-                </section>
                 
+            </div>
 
             </header>
 
@@ -48,9 +52,10 @@
 
         
             <div class="box1">
+            <div class="box1content">
                 
                         <section>
-                            <h2>ABOUT ME</h2>
+                            <h2 id="education_a">ABOUT ME</h2>
                     <div>
                             <img class="image-container" img src="img/Jenny_Pic.jpg" alt="Meet Jenny">
                     </div>
@@ -58,33 +63,40 @@
                             <p>I have worked in Marketing for the past five years where I had the ability to work creatively and apply design thinking to achieve positive solutions. I enjoy working in a creative environment and look forward to a career in User Experience.</p>
                     </div>
                         </section>
+                    <div class="quote">
+                        <aside>
+                            "To find ideas, find problems.To find problems, talk to people." <br>
+                            -Julie Zhou
+                        </aside>
+                    </div>
                 </div>
+            </div>
             </div>
 
 
                 <div class="box2">
                     <div class="education">
                         <section>
-                            <h2 id="education_a">Education</h2>
-                            <h2>Virginia Tech</h2>
+                            <h2 id="mywork">Education</h2>
+                            <h3>Virginia Tech</h3>
                                 <ul>
                                     <li>
                                         2013-2017 - Double majored in Human Development and Psychology and minored in Leadership and Sustainable Social Change 
                                     </li>
                                 </ul>
-                            <h2>General Assembly</h2>
+                            <h3>General Assembly</h3>
                                 <ul>
                                     <li>
                                         2020 - obtained a certificate in User Experience and Design  
                                     </li>
                                 </ul>
-                            <h2>Cornell Online Univeristy</h2>
+                            <h3>Cornell Online Univeristy</h3>
                                 <ul>
                                     <li>
                                         2020 - obtained a certificate in Web Design and Development 
                                     </li>
                                 </ul>
-                            <h2>Drexel Online University </h2>
+                            <h3>Drexel Online University </h3>
                                 <ul>
                                     <li>
                                         2022- Present - Receiving a master’s in human computer Interaction and User Experience  
@@ -95,8 +107,8 @@
                 </div>
   
             <div class="box3">
-                <section >
-                    <h2>My Work</h2>
+                <section>
+                    <h2 id="myworka">My Work</h2>
                     <div><a href="KitchenBuddy.html" class="GreyLink"><h2>KitchenBuddy</h2></a></div> 
                     <div><a href="StyleSync.html" class="GreyLink"><h2>Style Sync</h2></a></div>
                     <div><a href="QuickDine.html" class="GreyLink"><h2>Quick Dine</h2></a></div>
@@ -109,7 +121,8 @@
             <footer>
                 <div class="box4">
                     <section>
-                        <h2>Contact Me</h2>
+                        <h2> Contact Me</h2>
+                        <a href="https://www.linkedin.com/in/jennifer-bailey-aa2b92115/">connect with my on Linkedin</a> 
                     </section>
                 </div>
             </footer>

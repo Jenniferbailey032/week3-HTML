@@ -1,10 +1,56 @@
 /* =============
     KitchenBuddy
 ============= */
+#box1{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid var(--brown);
+    margin:16px;
+    margin-top: 400px;
+    max-width: 100%;
+
+}
+
+.image-container{
+    // display: flex;
+    // justify-content: center;
+    align-items: center;
+    width: 300px;
+    height:auto;
+    border-radius: 50px;
+    // margin: 80px;
+    // margin-left: 80px;
+    // margin-right: 1px;
+    padding: 20px;
+    max-width: 100%;
+
+}
+
+#image-container{
+    align-items: center;
+    width: 100%;
+    height:auto;
+    border-radius: 70px;
+    margin-bottom: -100px;
+
+}
+
+.box2{
+    padding: 20px;
+    border: 5px solid var(--brown);
+    margin:16px;
+
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+}
 
     // love // hate
     a:link, a:visited{
-        color: var(--brown);
+        color: var(--white);
         text-decoration: none;
     }
 

@@ -1,51 +1,161 @@
 /* =============
     Header
 ============= */
+#title{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
 header{
     padding: 48px 0;
-    text-align: center;
-    margin: 16px;
+    display: grid;
+    grid-template-rows: 50% auto;
+    grid-template-areas: 
+    "burger"
+    "nav";
     padding: 16px;
-display:grid;
-grid-template-columns: 50% auto;
-grid-template-area:
-"logo burger"
-"nav nav";
-position:fixed;
-width: 100%;
-box-sizing: border-box;
-box-shadow: 0px 1px 1px rgba(42, 48, 54, .3);
-top:0;
-left:0;
+    position:fixed;
+    width: 100%;
+    background-color: var(--white);
+    box-sizing: border-box;
+    top:0;
+    left:0;
 
 
-    a:link, a:visited{
-        color: var(--green);
-        transition: .25s;
-        text-decoration: none;
-        font-size: rem-calc(36);
-        letter-spacing: rem-cal(10);
-        
+    @include lg{
+        grid-area: "nav";
+        padding-bottom: 0;
     }
-    
-    a:hover, a:active{
-        color: var(--brown);
-
-    }
-
-    
-}
-p{
-    font: rem-calc(14);
-    font-style: italic;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    letter-spacing: rem-calc(1);
+   
 }
 
-// a.nav,
-// a.nav:visited{
-//         color: var(--white);
+
+// .title_nav{
+//     display:grid;
+//     grid-template-rows: 20px 20px 100px;
+//     grid-gap: 20px;
+//     align-items: center;
+//     text-align: center;
+//     background-color: var(--white);
+//     padding: 20px;
+//     width: 100px;
+
+  
+//   }
+  
+
+.logo img{
+    grid-area: logo;
+    max-width: 250px;
+    padding: -50px;
+    margin: -40px;
+    display:grid;
+    align-items: center;
+    // grid-row-start: 1;
+    // grid-row-end: 1;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    grid-column: 1; 
+    grid-area: nav;
+}
+
+#main-menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    // grid-gap: 16px;
+    padding:16px;
+    margin:0;
+    // width: 100%;
+    
+  }
+
+#main-menu li{
+    margin-right: 20px;
+
+}
+
+#burger-container{
+    display:flex;
+    align-items: left;
+    justify-content: center;
+    background-color: transparent;
+    padding:60px 0px;
+    position: fixed;
+    grid-area: burger;
+
+    @include lg{
+        display:none;
+    }
+
+    button{
+        border: none;
+        background-color: transparent;
+        color: black;
+        align-items: left;
+        font-size: rem-calc(20);
+        cursor:pointer;
+        font-weight:400;
+
+        i{
+            padding-right:16px;
+        }
+    }
+}
+
+
+
+// .title_nav{
+//         // display: grid;
+//         // grid-template-columns: 100px 100px;
+//         // grid-template-areas: "16px content 16px";
+//         width:100%;
+//         align-items: center;
+//         text-align: center;
+//         padding:16px;
+//         border: 5px solid var(--brown);
+//         margin:16px;
+
+//         #logo{
+//             align-items: center;
+//             width: 10px;
+//             height:auto;
+//             padding: 10px;
+//         }
+// }
+
+// header{
+//     padding: 10px 0;
+//     text-align: center;
+//     margin: 16px;
+//     padding: 16px;
+//     position:fixed;
+//     // display:grid;
+//     // // grid-template-rows: 50% 50% auto;
+//     // // grid-template-areas:
+//     // // "title title"
+//     // // "logo burger"
+//     // // "nav nav";
+    
+//     // width: 100%;
+//     // box-sizing: border-box;
+//     // box-shadow: 0px 1px 1px rgba(42, 48, 54, .3);
+//     // top:0;
+//     // left:0;
+
+
+//     @include lg{
+//         grid-template-areas: "logo nav";
+//     }
+
+
+//     a:link, a:visited{
+//         color: var(--green);
 //         transition: .25s;
 //         text-decoration: none;
 //         font-size: rem-calc(36);
@@ -53,7 +163,40 @@ p{
         
 //     }
     
+//     a:hover, a:active{
+//         color: var(--brown);
+
+//     }
+
+    
+// }
+p{
+    font: rem-calc(14);
+    font-style: italic;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    letter-spacing: rem-calc(1);
+    text-align: center;
+    align-items: center;
+}
+
+// a.nav,
+// a.nav:visited{
+//         color: black;
+//         transition: .25s;
+//         text-decoration: none;
+//         font-size: rem-calc(30);
+//         letter-spacing: rem-cal(10);
+//         padding: 20px;
+
+//         li{
+//             text-decoration: underline;
+//         }
+        
+//     }
+    
 //     a.nav:hover,
 //     a.nav:active {
-//         color: var(--brown);
+//         color: black;
+//         padding: 20px;
 //     }
